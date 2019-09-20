@@ -15,10 +15,10 @@ from tests.conftest import skip_if_server_version_lt
 
 # 3rd party imports
 import pytest
-import redis
+from rediscluster.vendor import redis
 from mock import patch, Mock
-from redis.connection import ssl_available, to_bool
-from redis._compat import unicode
+from rediscluster.vendor.redis.connection import ssl_available, to_bool
+from rediscluster.vendor.redis._compat import unicode
 
 
 class DummyConnection(object):

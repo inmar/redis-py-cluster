@@ -17,10 +17,10 @@ from .exceptions import (
 )
 
 # 3rd party imports
-from redis._compat import nativestr
-from redis.client import dict_merge
-from redis.connection import ConnectionPool, Connection, DefaultParser, SSLConnection
-from redis.exceptions import ConnectionError
+from .vendor.redis._compat import nativestr
+from .vendor.redis.client import dict_merge
+from .vendor.redis.connection import ConnectionPool, Connection, DefaultParser, SSLConnection
+from .vendor.redis.exceptions import ConnectionError
 
 
 class ClusterParser(DefaultParser):

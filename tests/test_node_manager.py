@@ -12,9 +12,9 @@ from rediscluster.nodemanager import NodeManager
 # 3rd party imports
 import pytest
 from mock import patch, Mock
-from redis import Redis
-from redis._compat import unicode
-from redis import ConnectionError, ResponseError
+from rediscluster.vendor.redis import Redis
+from rediscluster.vendor.redis._compat import unicode
+from rediscluster.vendor.redis import ConnectionError, ResponseError
 
 pytestmark = skip_if_server_version_lt('2.9.0')
 
