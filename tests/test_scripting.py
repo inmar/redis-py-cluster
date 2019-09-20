@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 from rediscluster.exceptions import RedisClusterException
 
 # 3rd party imports
-from redis import exceptions
+from rediscluster.vendor.redis import exceptions
 import pytest
 
 
