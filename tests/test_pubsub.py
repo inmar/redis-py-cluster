@@ -12,9 +12,9 @@ from rediscluster.client import RedisCluster
 import pytest
 
 # import redis
-from redis import Redis
-from redis.exceptions import ConnectionError
-from redis._compat import basestring, unichr
+from rediscluster.vendor.redis import Redis
+from rediscluster.vendor.redis.exceptions import ConnectionError
+from rediscluster.vendor.redis._compat import basestring, unichr
 
 from .conftest import _get_client
 from .conftest import skip_if_server_version_lt, skip_if_redis_py_version_lt

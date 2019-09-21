@@ -34,11 +34,11 @@ from .utils import (
     parse_pubsub_numpat,
 )
 # 3rd party imports
-from redis import Redis
-from redis.client import list_or_args, parse_info
-from redis.connection import Token
-from redis._compat import iteritems, basestring, izip, nativestr, long
-from redis.exceptions import RedisError, ResponseError, TimeoutError, DataError, ConnectionError, BusyLoadingError
+from .vendor.redis import Redis
+from .vendor.redis.client import list_or_args, parse_info
+from .vendor.redis.connection import Token
+from .vendor.redis._compat import iteritems, basestring, izip, nativestr, long
+from .vendor.redis.exceptions import RedisError, ResponseError, TimeoutError, DataError, ConnectionError, BusyLoadingError
 
 
 class RedisCluster(Redis):

@@ -19,7 +19,7 @@ from rediscluster.utils import (
 
 # 3rd party imports
 import pytest
-from redis._compat import unicode
+from rediscluster.vendor.redis._compat import unicode
 
 
 def test_parse_cluster_slots():

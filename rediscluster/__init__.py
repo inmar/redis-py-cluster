@@ -9,10 +9,10 @@ from .pipeline import ClusterPipeline
 from .pubsub import ClusterPubSub
 
 # Monkey patch RedisCluster class into redis for easy access
-import redis
-setattr(redis, "RedisCluster", RedisCluster)
-setattr(redis, "ClusterPubSub", ClusterPubSub)
-setattr(redis, "ClusterPipeline", ClusterPipeline)
+from .vendor import redis as _redis
+setattr(_redis, "RedisCluster", RedisCluster)
+setattr(_redis, "ClusterPubSub", ClusterPubSub)
+setattr(_redis, "ClusterPipeline", ClusterPipeline)
 
 # Major, Minor, Fix version
 __version__ = (2, 0, 0)

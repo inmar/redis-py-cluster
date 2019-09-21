@@ -8,7 +8,7 @@ from .exceptions import (
 )
 
 # 3rd party imports
-from redis._compat import basestring, nativestr
+from .vendor.redis._compat import basestring, nativestr
 
 
 def bool_ok(response, *args, **kwargs):

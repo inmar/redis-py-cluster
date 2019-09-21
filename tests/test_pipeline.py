@@ -13,8 +13,8 @@ from tests.conftest import _get_client, skip_if_server_version_lt
 # 3rd party imports
 import pytest
 from mock import patch
-from redis._compat import unichr, unicode
-from redis.exceptions import WatchError, ResponseError, ConnectionError
+from rediscluster.vendor.redis._compat import unichr, unicode
+from rediscluster.vendor.redis.exceptions import WatchError, ResponseError, ConnectionError
 
 
 class TestPipeline(object):
