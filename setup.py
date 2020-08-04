@@ -19,7 +19,7 @@ with open(os.path.join('docs', 'release-notes.rst')) as f:
     history = f.read()
 
 setup(
-    name="redis-py-cluster",
+    name="inmar-redis-py-cluster",
     version="2.0.0",
     description="Library for communicating with Redis Clusters. Built on top of redis-py lib",
     long_description=readme + '\n\n' + history,
