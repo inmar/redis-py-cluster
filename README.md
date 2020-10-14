@@ -1,5 +1,14 @@
 # redis-py-cluster
 
+
+# Deprecation Note
+
+This client was forked from https://github.com/Grokzen/redis-py-cluster and vendored for use with redis-py 3.0 when dpn_web_services upgrades to Python 3. The original project has released version 2.1.0, which is compatible with more recent versions of redis. As a result, this fork is obsolete.
+
+
+
+# Original README
+
 This client provides a client for redis cluster that was added in redis 3.0.
 
 This project is a port of `redis-rb-cluster` by antirez, with alot of added functionality. The original source can be found at https://github.com/antirez/redis-rb-cluster
